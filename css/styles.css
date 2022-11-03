@@ -204,13 +204,14 @@ header {
 
 /* ----------Features-------------------- */
 .features-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
+
   background-color: var(--light-backgroung-color);
-}
-.features-icon {
-  margin: 25px 100px 25px 100px;
 }
 .features-items {
   display: flex;
@@ -262,8 +263,7 @@ header {
   margin-left: 30px;
 }
 div.card {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding: 30px 32px;
 }
 section.card {
   background-color: var(--light-backgroung-color);
@@ -294,14 +294,13 @@ section.card {
 }
 .card .section-card-text {
   margin: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .card-icon-items {
-  margin: 0px 32px 30px 32px;
-
   display: flex;
   justify-items: center;
   align-items: center;
@@ -332,7 +331,7 @@ section.card {
   display: flex;
 }
 .item-clients {
-  width: calc((100%-150px) / 6);
+  width: calc((100% - 150px) / 6);
 }
 .item-clients:not(:last-child) {
   margin-right: 30px;
@@ -342,7 +341,6 @@ section.card {
   padding-bottom: 0;
   display: flex;
   justify-content: center;
-  width: 170px;
   height: 92px;
 
   fill: var(--primary-icon-color);
@@ -415,8 +413,15 @@ img {
   margin-bottom: 0;
 }
 .filter-work-items .link {
+  display: block;
+
   padding-top: 0;
   padding-bottom: 0;
+}
+.filter-work-items .link:hover,
+.filter-work-items .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .filter-work-items .filter-work-title {
   margin-bottom: 4px;
